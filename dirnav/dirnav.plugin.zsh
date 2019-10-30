@@ -12,12 +12,12 @@
 #   autoload -Uz dirnav
 #   dirnav
 #
-#   # keybindings
-#   bindkey "^[[1;5D" _dirnav_parent     # ctrl-left
-#   bindkey "^[[5D"   _dirnav_parent     # ctrl-left
-#   bindkey "^[[1;5C" _dirnav_child      # ctrl-right
-#   bindkey "^[[5C"   _dirnav_child      # ctrl-right
 
+# keybindings
+bindkey "^[[1;5D" _dirnav_parent     # ctrl-left
+bindkey "^[[5D"   _dirnav_parent     # ctrl-left
+bindkey "^[[1;5C" _dirnav_child      # ctrl-right
+bindkey "^[[5C"   _dirnav_child      # ctrl-right
 
 autoload -Uz add-zsh-hook
 
@@ -140,5 +140,5 @@ zle -N _dirnav_parent
 zle -N _dirnav_child
 
 # clean up
-unfunction dirnav
+#unfunction dirnav
 return 0
